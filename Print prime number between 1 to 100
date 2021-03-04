@@ -1,0 +1,35 @@
+
+/*
+ Copyright   : Techyrick.com
+ Description : Print prime number between 1 to 100
+ ============================================================================
+ */
+
+#include<stdio.h>
+
+int main(void) {
+
+	int i = 1, j = 2;
+
+	for (i = 1; i <= 100; i++) {
+		j = 2;
+		while (j <= i - 1) {
+
+			if (i % j == 0) {
+
+				break;
+			}
+
+			j++;
+		}
+
+		if (i == j) {
+			printf("\n%d is a Prime number.", i);
+
+		}
+
+	}
+
+	return 0;
+}
+
